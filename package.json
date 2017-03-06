@@ -1,0 +1,58 @@
+{
+  "name": "node-guru",
+  "version": "1.0.0",
+  "description": "node 开发脚手架 & 教程 & demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "lint": "eslint --fix",
+    "test": "NODE_ENV=test_local ava -v",
+    "cov": "nyc report --reporter=html",
+    "test:cov": "NODE_ENV=test_local nyc ava -v && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:hafeyang/node-guru.git"
+  },
+  "keywords": [
+    "nodejsv7",
+    "koa2"
+  ],
+  "author": "node-guru team",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^0.18.2",
+    "bluebird": "^3.4.6",
+    "ding-load-dir": "^1.0.0",
+    "joi": "^9.2.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-convert": "^1.2.0",
+    "koa-cookie": "^1.0.0",
+    "koa-json": "^1.1.1",
+    "koa-router": "^7.0.0",
+    "lodash": "^4.16.6",
+    "moment": "^2.15.2",
+    "mongoose": "^4.6.6",
+    "nyc": "^10.1.2",
+    "password-hash": "^1.2.2",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2",
+    "uuid": "^3.0.1",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "nodemon": "^1.11.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.test.js"
+    ],
+    "concurrency": 25,
+    "serial": true,
+    "failFast": false
+  }
+}

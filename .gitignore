@@ -1,0 +1,7 @@
+logs/*
+node_modules/*
+npm-debug.log
+.idea/
+.vscode/
+coverage/*
+.nyc_output/*
