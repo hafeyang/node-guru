@@ -6,7 +6,7 @@
 npm install pm2 -g
 
 pm2 start app.js --name "guru"
-[PM2] Starting /Users/gf/Projects/node-guru/app.js in fork_mode (1 instance)
+[PM2] Starting /Users/xxx/Projects/node-guru/app.js in fork_mode (1 instance)
 [PM2] Done.
 ┌──────────┬────┬──────┬──────┬────────┬─────────┬────────┬─────┬───────────┬──────────┐
 │ App name │ id │ mode │ pid  │ status │ restart │ uptime │ cpu │ mem       │ watching │

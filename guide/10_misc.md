@@ -41,3 +41,19 @@ chore：构建过程或辅助工具的变动
 
 ```
 参见[http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+
+
+# Mac bash增强工具 oh my zsh
+[oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
+相当好玩，各种feature
+[使用 zsh 的九个理由](http://lostjs.com/2012/09/27/zsh/)
+
+# Mac 任务切换
+[CmdTap](http://www.yingdev.com/projects/cmdtap) 付费
+
+# Mac 窗口管理
+[Spectacle](https://www.spectacleapp.com/)
+
+# 更多Mac app
+[这货玩的很溜](https://github.com/yidinghan/tools)
+

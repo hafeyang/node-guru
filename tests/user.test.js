@@ -77,7 +77,7 @@ test("user: should login success and refesh token", async (t) => {
   const resNew = await helper.request({
     url: "/users/by_accesstoken",
     method: "get",
-    header: { Cookie: `token=${res.body.accessToken}`}
+    header: { Cookie: `token=${res.body.accessToken}` }
   });
   t.is(resNew.statusCode, 200);
 });

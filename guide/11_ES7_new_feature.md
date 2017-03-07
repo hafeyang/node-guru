@@ -15,7 +15,7 @@ ES6（ECMAScript2015）的出现，无疑给前端开发人员带来了新的惊
 * Modules（模块） in ES6
 
 
-1.Default Parameters（默认参数） in ES6
+## Default Parameters（默认参数） in ES6
 还记得我们以前不得不通过下面方式来定义默认参数：
 
 ```js
@@ -37,7 +37,7 @@ var link = function(height = 50, color = 'red', url = 'http://azat.co') {
 
 顺便说一句，这个语法类似于Ruby！
 
-2.Template Literals（模板对象） in ES6
+## Template Literals（模板对象） in ES6
 在其它语言中，使用模板和插入值是在字符串里面输出变量的一种方式。因此，在ES5，我们可以这样组合一个字符串：
 ```js
 var name = 'Your name is ' + first + ' ' + last + '.';
@@ -52,7 +52,7 @@ var name = `Your name is ${first} ${last}. `;
 var url = `http://localhost:3000/api/messages/${id}`;
 ```
 
-3.Multi-line Strings （多行字符串）in ES6
+## Multi-line Strings （多行字符串）in ES6
 ES6的多行字符串是一个非常实用的功能。在ES5中，我们不得不使用以下方法来表示多行字符串：
 ```js
 var roadPoem = 'Then took the other, as just as fair,nt'
@@ -75,7 +75,7 @@ var fourAgreements = `You have the right to be you.
     You can only be you when you do your best.`;
 ```
 
-4.Destructuring Assignment （解构赋值）in ES6
+## Destructuring Assignment （解构赋值）in ES6
 解构可能是一个比较难以掌握的概念。先从一个简单的赋值讲起，其中house 和 mouse是key，同时house 和mouse也是一个变量，在ES5中是这样：
 
 ```js
@@ -107,7 +107,8 @@ var [col1, col2]  = $('.column'),
 ```
 
 我们可能需要一些时间来习惯解构赋值语法的使用，但是它确实能给我们带来许多意外的收获。
-5.Enhanced Object Literals （增强的对象字面量）in ES6
+
+## Enhanced Object Literals （增强的对象字面量）in ES6
 使用对象文本可以做许多让人意想不到的事情！通过ES6，我们可以把ES5中的JSON变得更加接近于一个类。
 下面是一个典型ES5对象文本，里面有一些方法和属性：
 ```js
@@ -148,7 +149,6 @@ getAccounts = function(){return [1,2,3]};
 var accountService = {
     __proto__: serviceBase,
     getAccounts,
-另外，我们可以调用super防范，以及使用动态key值(valueOf_1_2_3):
     toString() {
      return JSON.stringify((super.valueOf()));
     },
@@ -159,7 +159,8 @@ console.log(accountService)
 ```
 
 ES6对象文本是一个很大的进步对于旧版的对象文本来说。
-6.Arrow Functions in（箭头函数） ES6
+
+## Arrow Functions in（箭头函数） ES6
 这是我迫不及待想讲的一个特征，CoffeeScript 就是因为它丰富的箭头函数让很多开发者喜爱。在ES6中，也有了丰富的箭头函数。这些丰富的箭头是令人惊讶的因为它们将使许多操作变成现实，比如，
 以前我们使用闭包，this总是预期之外地产生改变，而箭头函数的迷人之处在于，现在你的this可以按照你的预期使用了，身处箭头函数里面，this还是原来的this。
 有了箭头函数在ES6中， 我们就不必用that = this或 self =  this  或 _this = this  或.bind(this)。例如，下面的代码用ES5就不是很优雅：
@@ -234,7 +235,7 @@ var ids = ['5632953c4e345e145fdf2df8','563295464e345e145fdf2df9'];
 var messages = ids.map((value, index, list) => `ID of ${index} element is ${value} `); // implicit return
 ```
 
-7. Promises in ES6
+## Promises in ES6
 Promises 是一个有争议的话题。因此有许多略微不同的promise 实现语法。Q，bluebird，deferred.js，vow, avow, jquery 一些可以列出名字的。也有人说我们不需要promises，仅仅使用异步，生成器，回调等就够了。但令人高兴的是，在ES6中有标准的Promise实现。
 下面是一个简单的用setTimeout()实现的异步延迟加载函数:
 
@@ -272,6 +273,7 @@ setTimeout(function(){
 
 ```js
 var wait1000 =  ()=> new Promise((resolve, reject)=> {setTimeout(resolve, 1000)});
+
 wait1000()
     .then(function() {
         console.log('Yay!')
@@ -283,8 +285,11 @@ wait1000()
 ```
 还是不确信Promises 比普通回调更好？其实我也不确信，我认为一旦你有回调的想法，那么就没有必要额外增加promises的复杂性。
 虽然，ES6 有让人崇拜的Promises 。Promises 是一个有利有弊的回调但是确实是一个好的特性，更多详细的信息关于promise:Introduction to ES6 Promises.
-8.Block-Scoped Constructs Let and Const（块作用域和构造let和const）
+
+
+## Block-Scoped Constructs Let and Const（块作用域和构造let和const）
 在ES6代码中，你可能已经看到那熟悉的身影let。在ES6里let并不是一个花俏的特性，它是更复杂的。Let是一种新的变量申明方式，它允许你把变量作用域控制在块级里面。我们用大括号定义代码块，在ES5中，块级作用域起不了任何作用：
+
 ```js
 function calculateTotalAmount (vip) {
   var amount = 0;
@@ -339,7 +344,8 @@ console.log(calculateTotalAmount(true));
 ```
 
 从我个人看来，let 和const使这个语言变复杂了。没有它们的话，我们只需考虑一种方式，现在有许多种场景需要考虑。
-9. Classes （类）in ES6
+
+## Classes （类）in ES6
 如果你喜欢面向对象编程（OOP），那么你将喜爱这个特性。以后写一个类和继承将变得跟在facebook上写一个评论那么容易。
 类的创建和使用真是一件令人头疼的事情在过去的ES5中，因为没有一个关键字class （它被保留，但是什么也不能做）。在此之上，大量的继承模型像pseudo classical, classical, functional 更加增加了混乱，JavaScript 之间的宗教战争只会更加火上浇油。
 用ES5写一个类，有很多种方法，这里就先不说了。现在就来看看如何用ES6写一个类吧。ES6没有用函数, 而是使用原型实现类。我们创建一个类baseModel ，并且在这个类里定义了一个constructor 和一个 getName()方法：
@@ -385,7 +391,7 @@ console.log('Data is %s', accounts.accountsData);
 Class name: Account Model
 Data is  32113123123,524214691
 
-10. Modules （模块）in ES6
+## Modules （模块）in ES6
 众所周知，在ES6以前JavaScript并不支持本地的模块。人们想出了AMD，RequireJS，CommonJS以及其它解决方法。现在ES6中可以用模块import 和export 操作了。
 在ES5中，你可以在 <script>中直接写可以运行的代码（简称IIFE），或者一些库像AMD。然而在ES6中，你可以用export导入你的类。下面举个例子，在ES5中,module.js有port变量和getAccounts 方法:
 
