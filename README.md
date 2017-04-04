@@ -14,7 +14,7 @@ npm start
 * [本项目骨架介绍](guide/03_about_guru.md)
 * [开发一个CRUD模块](guide/04_CRUD.md)
 * [中间件](guide/05_middleware.md)
-* [校验数据](guide/06_vaildate.md)
+* [校验数据](guide/06_validate.md)
 * [语法检查](guide/07_lint.md)
 * [单测](guide/08_test.md)
 * [部署](guide/09_deploy.md)
