@@ -19,5 +19,5 @@ npm start
 * [单测](guide/08_test.md)
 * [部署](guide/09_deploy.md)
 * [开发常用工具,IDE,技巧,提示](guide/10_misc.md)
-* [ES6/7语言新特性](guide/11_ES_7_new_feature.md)
+* [ES6/7语言新特性](guide/11_ES7_new_feature.md)
 * [2016流行的NodeJS包/库](guide/12_node_top_packages.md)
