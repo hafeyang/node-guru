@@ -4,8 +4,10 @@ const _ = require("lodash");
 const settings = {
   base: {
     log: {
-      console: true
-    }
+      console: true,
+      fields: ["method", "url", "res.statusCode", "req.headers", "request.body", "body"]
+    },
+    errorStack: true
   },
   development: {
     mongos: {

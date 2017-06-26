@@ -7,7 +7,7 @@ const router = require('koa-router')();
 const hash = require('password-hash');
 const _ = require("lodash");
 const uuidV4 = require('uuid/v4');
-const auth = require("../lib/auth")
+const auth = require("../lib/auth");
 
 
 // curl "http://localhost:3500/users/"

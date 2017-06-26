@@ -8,6 +8,7 @@ const _ = require("lodash");
 const router = require('koa-router')();
 const users = require('./routes/users');
 const http = require("http");
+const settings = require("./settings");
 
 const app = new Koa();
 
@@ -22,11 +23,12 @@ app.use(async (ctx, next) => {
     await next();
   } catch (error) {
     logger.error('server error', error);
+    settings.errorStack && (ctx.body = error.stack);
     ctx.status = error.status || 500;
   }
   const responseTime = new Date() - start;
   const logObj = { responseTime };
-  ["method", "url", "res.statusCode", "req.headers"].forEach(n => (logObj[n] = _.get(ctx, n)));
+  settings.log.fields.forEach(n => (logObj[n] = _.get(ctx, n)));
   logger.info(logObj);
 });
 
