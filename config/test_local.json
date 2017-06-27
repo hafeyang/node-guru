@@ -1,0 +1,7 @@
+{
+  "mongos": {
+    "guru": {
+      "database": "node-guru-test-local"
+    }
+  }
+}

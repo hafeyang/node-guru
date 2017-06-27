@@ -16,9 +16,8 @@
 ├── package.json 声明入口，依赖模块等
 ├── routes 路由定义
 │   └── query.js
-├── sbin 相关的shell脚本
-│   └── build.sh 构建镜像
-└── settings.js 配置
+└── sbin 相关的shell脚本
+    └── build.sh 构建镜像
 ```
 # 主要用到的库/模块
 * [Koa](http://koajs.com/) web框架
@@ -28,3 +27,4 @@
 * [mongoose](http://mongoosejs.com/) 基于MongoDB的ORM库
 * [winston](https://github.com/winstonjs/winston) 定义日志输出方式
 * [ioredis](https://github.com/luin/ioredis) Redis访问库
+* [config](https://github.com/lorenwest/node-config) 配置

@@ -7,7 +7,7 @@ const app = require('../app');
 
 const helper = module.exports = {};
 
-helper.config = require('../settings');
+helper.config = require('config');
 
 helper.initDb = data =>
   Promise.map(Object.keys(data), (model) => {

@@ -1,0 +1,17 @@
+{
+  "log": {
+    "console": true,
+    "fields": ["method", "url", "res.statusCode", "req.headers", "request.body"]
+  },
+  "errorStack": true,
+  "mongos": {
+    "guru": {
+      "hosts": [
+        "127.0.0.1:27017"
+      ],
+      "database": "node-guru",
+      "options": {
+      }
+    }
+  }
+}
